@@ -5,36 +5,37 @@ html {
         "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     letter-spacing: 0.2rem;
+    height: 100%;
 }
 
 body {
     display: flex !important;
     flex-direction: column;
     margin: 0px !important;
-}
-
-.background {
     background: rgb(0, 0, 0);
-    /* background: linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(75, 35, 80, 1) 48%, rgba(0, 111, 133, 1) 100%); */
-    background: linear-gradient(rgb(102 102 102) 0%, rgb(131 74 139) 48%, rgb(25 129 151) 100%);
+}
+.main {
     width: 100vw;
     height: 100vh;
-
+    background: rgb(25 129 151);
+    background: linear-gradient(rgb(102 102 102) 0%, rgb(131 74 139) 48%, rgb(25 129 151) 100%);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-end;
 }
 
 .helloText {
-    -webkit-animation: showAnim 2.5s ease-in-out 0s 1 normal forwards;
-    animation: showAnim 2.5s ease-in-out 0s 1 normal forwards;
+    -webkit-animation: showAnim 3s ease-in-out 0s infinite normal forwards;
+    animation: showAnim 3s ease-in-out 0s infinite normal forwards;
 
     /*     position: absolute;
     top: 0px; */
 
+    text-align: center;
+
     font-size: xx-large;
 
-    opacity: 0%;
+    /* opacity: 0%; */
     color: whitesmoke;
 
     align-self: center;
@@ -44,9 +45,31 @@ body {
 
 .bio {
     text-align: center;
+    font-size: x-large;
+    color: antiquewhite;
 
     flex: 3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.bio img {
+    border-radius: 40%;
+    width: clamp(10%, 200px, 30%);
+}
+
+.bio > p {
+    width: clamp(70%, 200px, 90%);
+    font-size: .8em
+}
+
+@media only screen and (max-height: 667px) {
+    .bio > p {
+        font-size: .6em
+    }
+  }
 
 .footer {
     display: flex;
@@ -63,8 +86,6 @@ a:visited {
     color: whitesmoke;
 }
 
-.spark {}
-
 @-webkit-keyframes showAnim {
     0% {
         color: aliceblue
@@ -74,36 +95,36 @@ a:visited {
         color: tomato
     }
 
-    15% {
+    /*  15% {
         color: aqua
-    }
+    } */
 
     20% {
         color: yellow
     }
 
-    25% {
+    /*  25% {
         color: blue
-    }
+    } */
 
     30% {
         color: brown
     }
 
-    35% {
+    /*  35% {
         color: chartreuse
-    }
+    } */
 
     40% {
         color: cornflowerblue
     }
 
-    45% {
+    /* 45% {
         color: coral
-    }
+    } */
 
     50% {
-        color: antiquewhite
+        color: rgb(212, 192, 166)
     }
 
     70% {
@@ -129,44 +150,44 @@ a:visited {
         color: tomato
     }
 
-    15% {
+    /*  15% {
         color: aqua
-    }
+    } */
 
     20% {
         color: yellow
     }
 
-    25% {
+    /*   25% {
         color: blue
-    }
+    } */
 
     30% {
         color: brown
     }
 
-    35% {
+    /*   35% {
         color: chartreuse
-    }
+    } */
 
     40% {
         color: cornflowerblue
     }
 
-    45% {
+    /*    45% {
         color: coral
-    }
+    } */
 
     50% {
         color: antiquewhite
     }
 
     70% {
-        color: blueviolet
+        color: chocolate
     }
 
     80% {
-        color: black
+        color: yellowgreen
     }
 
     100% {
