@@ -1,0 +1,176 @@
+html {
+    line-height: 2;
+    -webkit-text-size-adjust: 100%;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    letter-spacing: 0.2rem;
+}
+
+body {
+    display: flex !important;
+    flex-direction: column;
+    margin: 0px !important;
+}
+
+.background {
+    background: rgb(0, 0, 0);
+    /* background: linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(75, 35, 80, 1) 48%, rgba(0, 111, 133, 1) 100%); */
+    background: linear-gradient(rgb(102 102 102) 0%, rgb(131 74 139) 48%, rgb(25 129 151) 100%);
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.helloText {
+    -webkit-animation: showAnim 2.5s ease-in-out 0s 1 normal forwards;
+    animation: showAnim 2.5s ease-in-out 0s 1 normal forwards;
+
+    /*     position: absolute;
+    top: 0px; */
+
+    font-size: xx-large;
+
+    opacity: 0%;
+    color: whitesmoke;
+
+    align-self: center;
+
+    flex: 2;
+}
+
+.bio {
+    text-align: center;
+
+    flex: 3;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+
+    flex: 2;
+}
+
+a,
+a:visited {
+    color: whitesmoke;
+}
+
+.spark {}
+
+@-webkit-keyframes showAnim {
+    0% {
+        color: aliceblue
+    }
+
+    10% {
+        color: tomato
+    }
+
+    15% {
+        color: aqua
+    }
+
+    20% {
+        color: yellow
+    }
+
+    25% {
+        color: blue
+    }
+
+    30% {
+        color: brown
+    }
+
+    35% {
+        color: chartreuse
+    }
+
+    40% {
+        color: cornflowerblue
+    }
+
+    45% {
+        color: coral
+    }
+
+    50% {
+        color: antiquewhite
+    }
+
+    70% {
+        color: blueviolet
+    }
+
+    80% {
+        color: black
+    }
+
+    100% {
+        opacity: 100%;
+        position: relative;
+    }
+}
+
+@keyframes showAnim {
+    0% {
+        color: aliceblue
+    }
+
+    10% {
+        color: tomato
+    }
+
+    15% {
+        color: aqua
+    }
+
+    20% {
+        color: yellow
+    }
+
+    25% {
+        color: blue
+    }
+
+    30% {
+        color: brown
+    }
+
+    35% {
+        color: chartreuse
+    }
+
+    40% {
+        color: cornflowerblue
+    }
+
+    45% {
+        color: coral
+    }
+
+    50% {
+        color: antiquewhite
+    }
+
+    70% {
+        color: blueviolet
+    }
+
+    80% {
+        color: black
+    }
+
+    100% {
+        opacity: 100%;
+        position: relative;
+    }
+}
