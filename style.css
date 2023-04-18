@@ -9,47 +9,34 @@ html {
 }
 
 body {
-    display: flex !important;
-    flex-direction: column;
+    height: 100vh;
     margin: 0px !important;
     background: rgb(0, 0, 0);
-}
-.main {
     width: 100vw;
-    height: 100vh;
+}
+
+.main {
+    min-height: 100%;
     background: rgb(25 129 151);
     background: linear-gradient(rgb(102 102 102) 0%, rgb(131 74 139) 48%, rgb(25 129 151) 100%);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    font-size: clamp(1.5vw,25px,4vh);
 }
 
 .helloText {
     -webkit-animation: showAnim 3s ease-in-out 0s infinite normal forwards;
     animation: showAnim 3s ease-in-out 0s infinite normal forwards;
-
-    /*     position: absolute;
-    top: 0px; */
-
     text-align: center;
-
-    font-size: xx-large;
-
-    /* opacity: 0%; */
+    font-size: 4vh;
     color: whitesmoke;
-
     align-self: center;
-
     flex: 2;
 }
 
 .bio {
     text-align: center;
-    font-size: x-large;
-    color: antiquewhite;
-
-    flex: 3;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,12 +44,12 @@ body {
 
 .bio img {
     border-radius: 40%;
-    width: clamp(10%, 200px, 30%);
+    max-height: 20vh;
 }
 
 .bio > p {
     width: clamp(70%, 200px, 90%);
-    font-size: .8em
+    font-size: .8em;
 }
 
 @media only screen and (max-height: 667px) {
@@ -77,7 +64,6 @@ body {
     justify-items: center;
     align-content: center;
     justify-content: space-evenly;
-
     flex: 2;
 }
 
